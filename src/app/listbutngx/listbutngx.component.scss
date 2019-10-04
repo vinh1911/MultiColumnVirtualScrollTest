@@ -1,0 +1,31 @@
+.virtual-scroller {
+    height: 93vh;
+    width: 1200px;
+    margin: 0 auto;
+    // align-items: center;
+    // justify-content: center;
+
+    .user-card {
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: top;
+        height: 132px;
+        margin: 6px;
+        width: 284px;
+    }
+    // Bonus points
+    &::-webkit-scrollbar {
+        width: 1em;
+    }
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color:#1976D2;
+        border-radius: 10px;
+    }
+}
+

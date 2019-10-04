@@ -1,0 +1,15 @@
+<div class="status">
+    Showing <span>{{scroll.viewPortInfo.startIndex}}</span>
+    - <span>{{scroll.viewPortInfo.endIndex}}</span>
+    of <span>{{people?.length}}</span>
+</div>
+<virtual-scroller class="virtual-scroller" #scroll [items]="people">
+    <mat-card class="user-card" *ngFor="let p of scroll.viewPortItems">
+        <mat-card-header>
+            <img mat-card-avatar [src]="p?.image">
+            <mat-card-title>{{p?.name}}</mat-card-title>
+            <mat-card-subtitle>{{p?.company}}</mat-card-subtitle>
+            <mat-card-subtitle>{{p?.suffixes}}</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+</virtual-scroller>

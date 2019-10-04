@@ -1,0 +1,12 @@
+<cdk-virtual-scroll-viewport itemSize="25">
+
+    <mat-card *cdkVirtualFor="let p of people" class="user-card">
+        <mat-card-header>
+            <img mat-card-avatar [src]="p.image">
+            <mat-card-title>{{p.name}}</mat-card-title>
+            <mat-card-subtitle>{{p.company}}</mat-card-subtitle>
+            <mat-card-subtitle>{{p.suffixes}}</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+
+</cdk-virtual-scroll-viewport>
