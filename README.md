@@ -1,3 +1,5 @@
-npm install
-json-server db.json
+npm install,
+
+json-server db.json,
+
 ng serve --o
